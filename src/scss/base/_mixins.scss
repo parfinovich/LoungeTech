@@ -1,0 +1,55 @@
+@mixin brother_text {
+    font-size: 84px;
+    font-weight: bold;
+    letter-spacing: -2.1px;
+    color: $white;
+}
+
+@mixin title_fz72 {
+    font-size: 72px;
+    font-weight: bold;
+    line-height: normal;
+    letter-spacing: -1.8px;
+    line-height: 1.67;
+    text-align: left;
+    color: $white;
+}
+
+@mixin title_fz60 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: -1.5px;
+    text-align: center;
+    color: $white;
+}
+
+@mixin subtitle_fz24 {
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+    text-align: center;
+    color: $white;
+}
+
+@mixin link_animation {
+    position: relative;
+    text-decoration: none;
+    &:hover {
+        color: $main-color;
+        transition: all 0.35s;
+        text-decoration: none;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 0;
+        bottom: -5px;
+        height: 1.5px;
+        background-color: $main-color;
+        transition: width 0.35s;
+    }
+    &:hover:before {
+        width: 100%;
+    }
+}
