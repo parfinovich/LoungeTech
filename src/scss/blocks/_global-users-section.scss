@@ -1,0 +1,93 @@
+.global-users-section {
+    padding: 90px 0;
+    min-height: 930px;
+    .blur-decor {
+        width: 483px;
+        height: 459px;
+        filter: blur(543.9px);
+        background: rgb(47, 32, 200);
+        opacity: 0.63;
+    }
+
+    h2 {
+        font-size: 57px;
+        line-height: 118%;
+        letter-spacing: 0%;
+        text-align: center;
+        text-transform: capitalize;
+        max-width: 749px;
+        margin: 0 auto 103px;
+    }
+    .btn-primary {
+        @include btn-primary;
+        display: inline-block;
+    }
+    .user-card {
+        .user-avatar {
+            border-radius: 50%;
+            position: relative;
+            z-index: 1;
+        }
+        .user-avatar-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                border: 0.5px solid rgb(58, 56, 79);
+                box-shadow: 0px 0px 23.1px 0px rgba(115, 112, 142, 0.37);
+                border-radius: 50%;
+                z-index: 0;
+                animation: pulse 2s ease-out infinite;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                inset: 0;
+                border: 0.5px solid rgb(58, 56, 79);
+                box-shadow: 0px 0px 23.1px 0px rgba(115, 112, 142, 0.37);
+                background: rgb(35, 30, 68);
+                border-radius: 50%;
+                z-index: 0;
+            }
+        }
+        .user-info {
+            max-width: 183px;
+            padding: 12px;
+            border: 0.5px solid $color-secondary;
+            border-radius: 10px;
+            background: #231E44;
+
+            h3 {
+                color: #8E54E9;
+                font-size: 19px;
+                font-weight: 600;
+                line-height: 118%;
+                letter-spacing: 0.76px;
+            }
+            p {
+                font-size: 15px;
+                line-height: 153%;
+                color: #D8D8D8;
+            }
+        }
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    70% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}

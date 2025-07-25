@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     @@include('html/head.html', {
-        "title":"Главная"
+        "title":"Home"
     })
 <body>
     @@include('html/header.html',{})
     <main>
-        
+        @@include('html/hero.html',{})
+        @@include('html/brands-section.html',{})
+        @@include('html/what-we-do-section.html',{})
+        @@include('html/projects-section.html',{})
+        @@include('html/global-users-section.html',{})
+        @@include('html/pricing-section.html',{})
     </main>
     @@include('html/footer.html',{})
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 </html>

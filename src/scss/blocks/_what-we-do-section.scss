@@ -1,0 +1,90 @@
+.what-we-do-section {
+    padding: 120px 0;
+    overflow: hidden;
+    .layer-blur {
+        width: 240px;
+        height: 240px;
+        filter: blur(200px);
+        background: rgba(65, 57, 129, 0.74);
+    }
+    .section-subtitle {
+        @include section-subtitle;
+    }
+    .section-title {
+        @include section-title;
+    }
+    .section-description {
+        @include section-description;
+        margin: 0 auto 117px;
+    }
+    .service-card {
+        width: 342px;
+        height: 308px;
+        border: 1px solid rgb(58, 56, 79);
+        border-radius: 10px;
+        box-shadow: 0px 0px 15.2px 0px rgba(115, 112, 142, 0.33);
+        background: rgba(30, 28, 48, 0.63);
+        position: relative;
+        padding-block-start: 85px;
+        padding-inline-start: 20px;
+        margin-bottom: 84px;
+        transform: translateY(0);
+        transition: transform .3s ease;
+        cursor: pointer;
+
+        h3 {
+            font-size: 19px;
+            font-weight: 500;
+            line-height: 118%;
+            letter-spacing: 0.76px;
+            color: $color-font-base;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 153%;
+            color: $color-font-base;
+            margin-bottom: 50px;
+        }
+    }
+    .service-card:hover {
+        transform: translateY(-30px);
+    }
+    .service-card:hover .btn-link svg {
+        transform: rotate(45deg);
+    }
+    .service-icon {
+        width: 87px;
+        height: 81px;
+        border-radius: 7px;
+        box-shadow: 0px 0px 5.8px 0px rgba(115, 112, 142, 0.41);
+        background: rgb(35, 30, 68);
+
+        margin-inline: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        top: -26px;
+        left: 20px;
+    }
+    .service-icon svg {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        display: block;
+        color: #593393;
+    }
+    .btn-link {
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 118%;
+        letter-spacing: 0.76px;
+        color: $color-accent;
+    }
+    .btn-link svg {
+        transition: transform 0.3s ease;
+    }
+}

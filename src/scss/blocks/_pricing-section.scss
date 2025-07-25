@@ -1,0 +1,14 @@
+.pricing-section {
+    padding: 120px 0 120px;
+
+    .section-subtitle {
+        @include section-subtitle;
+    }
+    .section-title {
+        @include section-title;
+    }
+    .section-description {
+        @include section-description;
+        margin: 0 auto 117px;
+    }
+}

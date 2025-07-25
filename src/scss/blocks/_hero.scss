@@ -1,0 +1,58 @@
+.text-gradient {
+  background: linear-gradient(to right, #8E54E9, #4776E6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#hero {
+    padding: 170px 0 182px;
+    overflow: hidden;
+    .my-blur-bg {
+        background: rgba(47, 32, 200, .5);
+        width: 689px;
+        height: 655px;
+        border-radius: 50%;
+        filter: blur(200px);
+        margin-inline: auto;
+        position: absolute;
+        right: 30%;
+        z-index: 0;
+    }
+    p {
+        font-size: 23px;
+        line-height: 118%;
+        letter-spacing: 3.45px;
+        color: #DDCCF8;
+    }
+    h1 {
+        font-size: 89px;
+        line-height: 118%;
+        text-transform: capitalize;
+    }
+
+    .lead {
+        font-size: 15px;
+        line-height: 153%;
+        color: #D8D8D8;
+        max-width: 720px;
+        letter-spacing: normal;
+    }
+    .btn {
+        
+    }
+    .btn-primary {
+        @include btn-primary;
+    }
+
+    .btn-primary svg {
+        transition: transform 0.3s ease;
+    }
+
+    .btn-primary:hover svg {
+        transform: rotate(45deg);
+    }
+
+    .btn-secondary {
+        @include btn-secondary;
+    }
+}

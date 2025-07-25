@@ -1,3 +1,28 @@
-$main-color: #ea4343;
-$second-color: #3c3c3c;
-$white: #fff;
+// Brand colors
+$color-primary:     #0B081E;
+$color-accent:      #7344BE;
+$color-font-base:   #F6F6F6;
+
+$color-secondary:       #3A384F;
+$color-secondary-base:  #1E1C30;
+$color-secondary-s600:  #181626;
+$color-secondary-s700:  #12111D;
+
+// Bootstrap overrides
+$primary:   $color-primary;
+$light:     $color-font-base;
+$dark:      $color-secondary-s700;
+
+// Optional for Bootstrap buttons, alerts, etc.
+$theme-colors: (
+  "primary": $primary,
+  "light":   $light,
+  "dark":    $dark,
+  "accent":  $color-accent,
+  "secondary": $color-secondary,
+);
+
+// Base fonts
+$body-bg:          $color-secondary-base;
+$body-color:       $color-font-base;
+$font-family-base: "Urbanist", sans-serif;

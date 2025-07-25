@@ -1,5 +1,17 @@
-@import 'base/mixins';
 @import 'base/variables';
+
+// Bootstrap partials
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import 'base/mixins';
 @import 'base/main';
 @import 'base/fonts';
 @import 'base/reset';
+
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/brands-section';
+@import 'blocks/what-we-do-section';
+@import 'blocks/projects-section';
+@import 'blocks/global-users-section';
+@import 'blocks/pricing-section';

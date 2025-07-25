@@ -1,5 +1,70 @@
-<header>
-    <section class="header">
-        
-    </section>
+<!-- Header Start -->
+<header class="header" role="banner">
+  <!-- Top header banner -->
+  <div class="header-top bg-primary py-4" aria-label="Promotional banner">
+    <div class="container">
+      <p class="mb-0 text-center small">
+        <strong class="me-5">Only 9 coupons left</strong> – Get 10% off your first order
+        <a href="#coupon" class="ms-5">Get it now</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Main header -->
+  <div class="header-main py-3 mt-4 m-auto">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between">
+        <!-- Logo -->
+        <a href="/" class="header-main__logo d-flex align-items-center" aria-label="LoungeTech home">
+          <img src="img/logo.svg" alt="LoungeTech Logo" width="180" height="34">
+        </a>
+
+        <!-- Navigation menu -->
+        <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Main menu">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <!-- Dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+                  <li><a class="dropdown-item" href="/faq.html">FAQ</a></li>
+                  <li><a class="dropdown-item" href="/pricing.html">Pricing</a></li>
+                  <li><a class="dropdown-item" href="/testimonials.html">Testimonials</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+
+            <!-- CTA Button -->
+            <a href="#contact" class="btn btn-primary cta-btn">
+                Let’s Talk
+                <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 9 8" fill="none">
+                <path d="M1.26923 0.5L8 0.5M8 0.5V7.5M8 0.5L1 7.5" stroke="#F6F6F6"/>
+                </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
 </header>
+<!-- Header End -->

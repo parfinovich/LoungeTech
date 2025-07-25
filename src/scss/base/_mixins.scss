@@ -1,55 +1,59 @@
-@mixin brother_text {
-    font-size: 84px;
-    font-weight: bold;
-    letter-spacing: -2.1px;
-    color: $white;
+@mixin subheading-s6-regular {
+  font-size: 15px;
+  line-height: 118%;
+  font-weight: 400;
+  letter-spacing: 0.64px;
+  color: $color-font-base;
+}
+@mixin subheading-s6-medium {
+  font-size: 15px;
+  line-height: 118%;
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  color: $color-font-base;
 }
 
-@mixin title_fz72 {
-    font-size: 72px;
-    font-weight: bold;
-    line-height: normal;
-    letter-spacing: -1.8px;
-    line-height: 1.67;
-    text-align: left;
-    color: $white;
+@mixin section-subtitle {
+    font-size: 23px;
+    line-height: 118%;
+    letter-spacing: 3.45px;
+    font-weight: 600;
+    color: #DDCCF8;
+    margin-bottom: 50px;
 }
 
-@mixin title_fz60 {
-    font-size: 60px;
-    font-weight: bold;
-    letter-spacing: -1.5px;
-    text-align: center;
-    color: $white;
+@mixin section-title {
+    font-size: 57px;
+    font-weight: 600;
+    line-height: 118%;
+    color: $color-font-base;
 }
 
-@mixin subtitle_fz24 {
-    font-size: 24px;
-    letter-spacing: -0.6px;
-    font-weight: bold;
-    text-align: center;
-    color: $white;
+@mixin section-description {
+    font-size: 18px;
+    line-height: 153%;
+    color: $color-font-base;
+    max-width: 348px;
+    color: #D8D8D8;
+}
+@mixin btn-primary {
+    padding: 16px 14px !important;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(100.47deg, rgb(142, 84, 233) 10.323%,rgb(71, 118, 230) 101.625%);
+    box-shadow: 0px 0px 13px 0px rgba(115, 112, 142, 0.37);
+    @include subheading-s6-medium;
+    line-height: 1;
+    transition: transform .3s ease;
+    z-index: 10;
 }
 
-@mixin link_animation {
-    position: relative;
-    text-decoration: none;
-    &:hover {
-        color: $main-color;
-        transition: all 0.35s;
-        text-decoration: none;
-    }
-    &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        width: 0;
-        bottom: -5px;
-        height: 1.5px;
-        background-color: $main-color;
-        transition: width 0.35s;
-    }
-    &:hover:before {
-        width: 100%;
-    }
+@mixin btn-secondary {
+    padding: 16px 14px !important;
+    border-radius: 10px;
+    background: $color-secondary-s700;
+    color: $color-accent;
+    border: 1px solid rgb(115, 68, 190);
+    box-shadow: 0px 0px 13px 0px rgba(115, 112, 142, 0.13);
+    z-index: 10;
 }

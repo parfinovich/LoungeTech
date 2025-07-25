@@ -44,5 +44,8 @@
     "webp-converter": "latest",
     "webpack": "latest",
     "webpack-stream": "latest"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7"
   }
 }
