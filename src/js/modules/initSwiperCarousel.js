@@ -17,4 +17,32 @@ export function initSwiperCarousel() {
             1200: { slidesPerView: 6 },
         },
     });
+
+    new Swiper('.team-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 38,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
+        },
+        breakpoints: {
+            768: { slidesPerView: 2 },
+            992: { slidesPerView: 3 },
+            1200: { slidesPerView: 4 },
+        },
+    });
+
+    new Swiper('.testimonial-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 128,
+        navigation: {
+            nextEl: '.swiper-next',
+            prevEl: '.swiper-prev',
+        },
+        breakpoints: {
+            768: { slidesPerView: 1 },
+            992: { slidesPerView: 2 }
+        },
+    });
 }
